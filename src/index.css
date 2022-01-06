@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-section {
+        @apply bg-primary w-1/4 h-screen;
+    }
+
+    .main-section-cover {
+        @apply bg-primary p-12 z-20 absolute w-1/4 h-full flex flex-col hover:opacity-0 duration-300 z-10 border-r-[1px] border-secondary;
+    }
+    
+    .main-section-cover > h1 {
+        @apply text-secondary tracking-wider text-8xl h-min mt-[-8px];
+    }
+
+    .main-section-cover > h3 {
+        @apply text-secondary tracking-wider text-4xl h-min;
+    }
+
+    .main-section-cover > p {
+        @apply text-secondary pt-6 tracking-wider text-xl h-min;
+    }
+}
